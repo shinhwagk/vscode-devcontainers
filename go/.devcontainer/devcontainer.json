@@ -13,13 +13,5 @@
 			"source=vscode-extensions,target=/root/.vscode-server/extensions,type=volume",
 			"source=vscode-gotools,target=/tmp/gotools,type=volume"
 	],
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "go version",
-
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
