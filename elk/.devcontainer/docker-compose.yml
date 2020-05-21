@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+  elasticsearch:
+    image: elasticsearch:7.7.0
+    ports:
+      - 9200:9200
+  kibana:
+    image: kibana:7.7.0
+    ports:
+      - 5601:5601
